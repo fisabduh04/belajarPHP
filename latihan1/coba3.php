@@ -24,11 +24,14 @@ $mahasiswa = $rows;
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Mahasissa TBK</title>
+  <title>Daftar Mahasiswa TBK</title>
 </head>
 
 <body>
   <h2>Daftar Mahasiswa TBK</h2>
+
+  <a href="tambah.php">Tambah Data Mahasiswa</a>
+  <br><br>
   <table border="1" cellpadding="10" cellspacing="0">
     <tr>
       <th>No</th>
