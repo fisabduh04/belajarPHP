@@ -33,21 +33,15 @@ $mahasiswa = $rows;
     <tr>
       <th>No</th>
       <th>Gambar</th>
-      <th>NRP</th>
       <th>Nama</th>
-      <th>Email</th>
-      <th>Jurusan </th>
       <th>Aksi</th>
     </tr>
     <?php foreach ($mahasiswa as $m) : ?>
       <tr>
         <td><?= $m['id']; ?></td>
         <td><img src="img/<?= $m['gambar']; ?>" width="60" alt=""></td>
-        <th><?= $m['nrp']; ?></th>
         <th><?= $m['nama']; ?></th>
-        <th><?= $m['email']; ?></th>
-        <th><?= $m['jurusan']; ?></th>
-        <th><a href="">Ubah</a>|<a href="">Hapus</a></th>
+        <th><a href="detail.php?id=<?= $m['id']; ?>">Lihat Detail</a></th>
       </tr>
     <?php endforeach; ?>
   </table>
